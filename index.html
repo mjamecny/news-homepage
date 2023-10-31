@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <header class="header">
+        <img src="imgs/logo.svg" alt="Logo" class="header__logo" />
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li><a href="#" class="header__link">Home</a></li>
+            <li><a href="#" class="header__link">New</a></li>
+            <li><a href="#" class="header__link">Popular</a></li>
+            <li><a href="#" class="header__link">Trending</a></li>
+            <li><a href="#" class="header__link">Categories</a></li>
+          </ul>
+          <img src="imgs/icon-menu.svg" alt="hamburger menu icon" class="header__hamburger">
+          <img src="imgs/icon-menu-close.svg" alt="hamburger menu icon" class="header__hamburger-close">
+      </header>
+      <main class="main">
+        <section class="showcase">
+          <div class="grid">
+            
+              
+            <picture>
+              <source srcset="imgs/image-web-3-mobile.jpg" media="(max-width: 34em)" />
+              <img class="showcase__image" src="imgs/image-web-3-desktop.jpg" alt="MDN" />
+            </picture>
+              <h1 class="showcase__title">The Bright Future of Web 3.0?</h1>
+              <div class="text-box"><p class="showcase__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?</p>
+              <button class="btn u-mt-md">Read More</button></div> 
+              <aside class="news">
+                <h2 class="news__title">New</h2>
+                <ul class="news__list">
+                  <li class="news__item"><h3 class="news__heading"><a href="#" class="news__link">Hydrogen VS Electric Cars</a></h3><p class="news__intro">Will hydrogen-fueled cars ever catch up to EVs?</p></li>
+                  <li class="news__item"><h3 class="news__heading"><a href="#" class="news__link">The Downsides of AI Artistry</a></h3><p class="news__intro">What are the possible adverse effects of on-demand AI image generation?</p></li>
+                  <li class="news__item"><h3 class="news__heading"><a href="#" class="news__link">Is VC Funding Drying Up?</a></h3><p class="news__intro">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p></li>
+                </ul>
+              </aside>  
+
+          </div>
+        </section>
+        <section class="feature-news">
+          <ul class="feature-news__list grid u-grid-narrow-row"><li class="feature-news__item"><img src="imgs/image-retro-pcs.jpg" alt="retro pc image"><div class="content-box"><p class="feature-news__number">01</p><a href="#" class="feature-news__link">Reviving Retro PCs</a><p class="feature-news__introduction">What happens when old PCs are given modern upgrades?</p></div></li>
+          <li class="feature-news__item"><img src="imgs/image-top-laptops.jpg" alt="laptop keyboard"><div class="content-box"><p class="feature-news__number">02</p><a href="#" class="feature-news__link">Top 10 Laptops of 2022</a><p class="feature-news__introduction">Our best picks for various needs and budgets.</p></div></li>
+          <li class="feature-news__item"><img src="imgs/image-gaming-growth.jpg" alt="gamepad"><div class="content-box"><p class="feature-news__number">03</p><a href="#" class="feature-news__link">The Growth of Gaming</a><p class="feature-news__introduction">How the pandemic has sparked fresh opportunities.</p></div></li>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
